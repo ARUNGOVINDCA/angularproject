@@ -1,24 +1,16 @@
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NewtestComponent } from './newtest/newtest.component';
-import { TestComponentComponent } from './test-component/test-component.component';
-import { HomeComponent } from './home/home.component';
+
+const routes: Routes = [
+  // Define your routes here
+];
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    NewtestComponent,
-    TestComponentComponent,
-    HomeComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [],
+  declarations: [AppComponent],
+  imports: [BrowserModule, RouterModule.forRoot(routes)], 
   bootstrap: [AppComponent]
 })
 export class AppModule { }
