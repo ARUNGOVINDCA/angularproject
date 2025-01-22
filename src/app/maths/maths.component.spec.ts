@@ -43,10 +43,5 @@ it("Should Division two number",()=>{
     const result = service.divide(200,10);
     expect(result).toEqual(20 );
 })
-// it("Should Division is Zero Throw the Error",()=>{
 
-//     const service = new Mathservices();
-//     expect(()=> service.divide(200,0)).toThrowError("cannot Divide by Zero");
-
-// })
 })

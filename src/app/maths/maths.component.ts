@@ -13,9 +13,7 @@ export class  Mathservices{
         return a*b;
     }
     divide(a: number,b:number) : number{
-        if(b==0){
-            throw new Error ('Cannot Divide by Zero')
-        }
+      
         return a/b;
     }
 }
