@@ -1,18 +1,31 @@
-h1 {
-    color: #4CAF50;
-  }
+// h1 {
+//     color: #4CAF50;
+//   }
   
-  button {
-    background-color: #007BFF;
+//   button {
+//     background-color: #007BFF;
+//     color: white;
+//     border: none;
+//     padding: 10px 20px;
+//     font-size: 16px;
+//     cursor: pointer;
+//     border-radius: 5px;
+//   }
+  
+//   button:hover {
+//     background-color: #0056b3;
+//   }
+
+.header{
+    display: flex;
+    padding-inline: 16px;
+    padding-block: 8;
+    background-color: #333;
     color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
+    align-items: center;
+    justify-content: space-between;
+
+
+    
+}
   
