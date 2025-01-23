@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'my-app app is running!'
+  title(title: any) {
+    throw new Error('Method not implemented.');
+  }
+  greeting: string = 'Welcome to the Increment Button Demo!';
+  count: number = 0;
+
+  increment() {
+    this.count++;
+}
 }
