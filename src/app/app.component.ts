@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+courses: any;
   title(title: any) {
     throw new Error('Method not implemented.');
   }
@@ -16,3 +17,4 @@ export class AppComponent {
     this.count++;
 }
 }
+
