@@ -15,6 +15,22 @@
 
 </header> -->
 
+
+<!-- //ngswitch case -->
+
 <ul class="nav nav-pills">
   
+   <button><li [class.active]="vieweMode =='Map'"><a (click)="vieweMode = 'Map'">Map View</a></li></button>                               
+  </ul>
+   <ul>
+   <button> <li [class.active]="vieweMode == 'List  '"><a (click)="vieweMode = 'List'">List View</a></li></button>                             
+  
 </ul>
+<div [ngSwitch]="vieweMode">
+  <button> <div *ngSwitchCase ="'Map'">Map View Content</div> </button>
+ <button> <div *ngSwitchCase ="'List'">List view Content  </div> </button>
+  <div *ngSwitchDefault="">OtherWise</div>
+</div>  
+
+
+
